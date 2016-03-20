@@ -1,0 +1,20 @@
+{
+  "name": "horrorgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tammerg/horrorGame.git"
+  },
+  "author": "Tammer Galal, CB Moate , Long Phan.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tammerg/horrorGame/issues"
+  },
+  "homepage": "https://github.com/tammerg/horrorGame#readme"
+}
