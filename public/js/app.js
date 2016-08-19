@@ -1,6 +1,4 @@
-angular.module('views', [
-  'ui-router',
-])
+angular.module('views', ['ui-router',])
 .config(['$stateProvider', '$urlRouterProvider','$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider){
   $urlRouterProvider.otherwise('/');
   //differnt page states
