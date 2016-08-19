@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="">
+<html ng-init>
   <head>
     <meta charset="utf-8">
     <title>A game</title>
@@ -14,9 +14,10 @@
     <!--custon CSS-->
     <link rel="stylesheet" type="text/css" href="">
   </head>
-  <body>
+  <body ng-app="views">
     <div ui-view></div>
+    <div>Ugly text here</div>
     <!--custom JS-->
-    <script type="text/javascript" src=""></script>
+    <script type="text/javascript" src="/js/app.js"></script>
   </body>
 </html>
