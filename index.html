@@ -2,7 +2,7 @@
 <html ng-init>
   <head>
     <meta charset="utf-8">
-    <title>A game</title>
+    <title>A scary game</title>
     <!--angular-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
@@ -12,11 +12,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!--custon CSS-->
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body ng-app="views">
-    <div ui-view></div>
-    <div>Ugly text here</div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+           <a class="navbar-brand" href="#">
+             <img alt="LOGO" src="">
+           </a>   
+        </div><!--/.navbar header-->
+        <div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Log-in</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Save and quit</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">New Game</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.navbar-->
+      </div><!--/.container-fluid-->
+    </nav>
+
+    
+    <div class="col-xs-6" id="levelImage">
+      <img class="img-responsive" src="/images/placeHolderImage.jpg">
+    </div><!--end of level image-->
+    <div class="col-xs-6" ui-view></div>
+    <div class="col-xs-12">
+      <div class="form-group">
+        <form>
+          <input type="text" name="userInput" placeholder="What do you do?" autofocus>
+          <button type="submitt" class="btn btn-default">Enter</button>
+        </form>
+      </div>
+    </div><!--end of user input-->
+
+    <footer>
+      <div class="col-xs-4 col-xs-offset-5">
+        <p class="text-muted">Footer Content goes right here</p>
+      </div>
+    </footer>
+
     <!--custom JS-->
     <script type="text/javascript" src="/js/app.js"></script>
   </body>
