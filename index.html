@@ -2,7 +2,7 @@
 <html ng-init>
   <head>
     <meta charset="utf-8">
-    <title>A game</title>
+    <title>A scary game</title>
     <!--angular-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
@@ -19,7 +19,7 @@
       <div class="container-fluid">
         <div class="navbar-header">
            <a class="navbar-brand" href="#">
-             <img alt="brand" src="">
+             <img alt="LOGO" src="">
            </a>   
         </div><!--/.navbar header-->
         <div>
@@ -39,8 +39,12 @@
       </div><!--/.container-fluid-->
     </nav>
 
-    <div ui-view></div>
+    
     <div>Ugly text here</div>
+    <div ui-view></div>
+    <div class="footer">
+      <p>footer goes here<p>
+    </div>
     <!--custom JS-->
     <script type="text/javascript" src="/js/app.js"></script>
   </body>
