@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/tammerg/horrorGame/issues"
   },
-  "homepage": "https://github.com/tammerg/horrorGame#readme"
+  "homepage": "https://github.com/tammerg/horrorGame#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
